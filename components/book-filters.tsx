@@ -18,10 +18,10 @@ export function BookFilters({
   return (
     <div>
       <Select value={currentFilter} onValueChange={onFilterChange}>
-        <SelectTrigger>
+        <SelectTrigger className="bg-white">
           <SelectValue placeholder="Filter books" />
         </SelectTrigger>
-        <SelectContent>
+        <SelectContent className="bg-white">
           <SelectItem value="all">All Books</SelectItem>
           <SelectItem value="free-ebooks">Free eBooks</SelectItem>
           <SelectItem value="paid-ebooks">Paid eBooks</SelectItem>

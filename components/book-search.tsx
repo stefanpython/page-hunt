@@ -5,6 +5,10 @@ import { BookList } from "@/components/book-list";
 import { SearchBar } from "@/components/search-bar";
 import { BookFilters } from "@/components/book-filters";
 import type { Book } from "@/types/book";
+import type {
+  GoogleBooksApiResponse,
+  GoogleBookItem,
+} from "@/types/google-books-api";
 
 export function BookSearch() {
   const [books, setBooks] = useState<Book[]>([]);
@@ -41,11 +45,11 @@ export function BookSearch() {
 
     try {
       const response = await fetch(url);
-      const data = await response.json();
+      const data: GoogleBooksApiResponse = await response.json();
 
       if (data.items) {
         setBooks(
-          data.items.map((item: any) => ({
+          data.items.map((item: GoogleBookItem) => ({
             id: item.id,
             title: item.volumeInfo.title || "Unknown Title",
             authors: item.volumeInfo.authors || ["Unknown Author"],

@@ -34,7 +34,9 @@ export function SearchBar({ onSearch }: SearchBarProps) {
           className="pl-8"
         />
       </div>
-      <Button type="submit">Search</Button>
+      <Button type="submit" className="bg-black text-white hover:bg-gray-800">
+        Search
+      </Button>
     </form>
   );
 }
