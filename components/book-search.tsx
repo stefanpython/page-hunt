@@ -41,7 +41,7 @@ export function BookSearch() {
     // Add filter if not "all"
     if (filterType !== "all") {
       url += `&filter=${filterType}`;
-    }
+    } //ss
 
     try {
       const response = await fetch(url);
