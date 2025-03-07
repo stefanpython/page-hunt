@@ -32,14 +32,7 @@ cd page-hunter
 npm install
 ```
 
-3️⃣ Set up environment variables:  
-Create a **.env.local** file and add your Google Books API key:
-
-```
-NEXT_PUBLIC_GOOGLE_BOOKS_API_KEY=your_api_key_here
-```
-
-4️⃣ Run the development server:
+3️⃣ Run the development server:
 
 ```
 npm run dev
