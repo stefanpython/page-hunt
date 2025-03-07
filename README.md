@@ -20,26 +20,31 @@ Page Hunt is a web application that allows users to search for books using the *
 ## 📦 Installation & Usage
 
 1️⃣ Clone the repository:
-\`\`\`
+
+```
 git clone https://github.com/yourusername/page-hunt.git
 cd page-hunter
-\`\`\`
+```
 
 2️⃣ Install dependencies:
-\`\`\`
+
+```
 npm install
-\`\`\`
+```
 
 3️⃣ Set up environment variables:  
 Create a **.env.local** file and add your Google Books API key:
-\`\`\`
+
+```
 NEXT_PUBLIC_GOOGLE_BOOKS_API_KEY=your_api_key_here
-\`\`\`
+```
 
 4️⃣ Run the development server:
-\`\`\`
+
+```
 npm run dev
-\`\`\`
+```
+
 Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## 📜 License
